@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.19)
+project(TSP)
+set(CMAKE_CXX_STANDARD 17)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) 
+add_executable(TSP main.cpp prim.h graph_builder.h graph_builder.cpp graph.h graph.cpp prim.cpp eulerian_circuit_algorithm.h eulerian_circuit_algorithm.cpp eulerian_graph_builder.h eulerian_graph_builder.cpp short_path_algorithm.h short_path_algorithm.cpp)
